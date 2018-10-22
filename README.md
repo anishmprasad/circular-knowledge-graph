@@ -57,4 +57,3 @@ Open `localhost:5555` on your browser
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Anishmprasad/knowledge-graph/blob/master/README.md) file for details
 
 #### A Visualization from Anish M Prasad
-> Hate cannot drive out hate; only love can do that.
