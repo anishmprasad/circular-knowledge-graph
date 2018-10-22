@@ -54,8 +54,8 @@ Open `localhost:5555` on your browser
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Anishmprasad/knowledge-graph/blob/master/README.md) file for details
 
-In the words of Martin Luther King Junior:
+**In the words of Martin Luther King Junior:**
 
 > Hate cannot drive out hate; only love can do that.
