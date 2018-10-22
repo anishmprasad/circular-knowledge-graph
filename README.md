@@ -1,6 +1,6 @@
 # knowledge-graph
 
-A visualisation which represents technology by knowlegde graph
+A visualisation which represents technology
 
 ## Getting Started
 
