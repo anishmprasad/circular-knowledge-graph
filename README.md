@@ -42,6 +42,9 @@ Open `localhost:5555` on your browser
 
 ### Screenshot
 
+![Preview][screenshot]
+
+[screenshot]: https://github.com/Anishmprasad/knowlege-graph/raw/master/src/public/images/screenshot.png "Preview screenshot"
 
 
 ## Built With
