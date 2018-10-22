@@ -58,5 +58,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 In the words of Martin Luther King Junior:
 
-> Pardon my French
-> A Anish M Prasad`s TimePass
+> Hate cannot drive out hate; only love can do that.
