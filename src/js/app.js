@@ -7,6 +7,7 @@ import projects from './data.json';
 import {config} from './config';
 import {utilsService} from './utils-service';
 import {deeplinkService} from './deeplink-service';
+import selectedNode from './selected-node'
 
 /**
  * Vector math helper class for 2d animation.
@@ -476,6 +477,7 @@ function ProjectExploreComponent(config_service) {
    * @param node  the project object to be selected.
    */
   this.selectProject = function (node) {
+    selectedNode(node)
     this.selected_project = node.data;
     setTimeout(() => {
       this.selected_project_changed = true;
