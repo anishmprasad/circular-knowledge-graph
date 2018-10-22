@@ -40,6 +40,36 @@ npm run dev
 ```
 Open `localhost:5555` on your browser
 
+### Usage
+
+please use `selectedNode` function for selected node event handler
+
+```js
+
+/**
+ * @description selected project logic added here
+ * @param {object} node 
+ * 
+ */
+export default function selectedNode(node){
+  console.log('selectedNode',node)
+  // sample node object
+  {
+    data : {
+      RGB: {r: 251, g: 188, b: 5},
+      fallbackColor: "#FBBC05",
+      id: "fontdiff",
+      name: "FontDiff",
+      small: true,
+      startsWith: "f",
+      summary: "A tool for finding visual differences between font versions",
+    }
+    ...
+  }
+}
+
+```
+
 ### Screenshot
 
 ![Preview][screenshot]
