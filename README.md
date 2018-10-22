@@ -34,7 +34,7 @@ And install packages
 ```
 npm install 
 ```
-finally start project ( development envionment )
+finally start project ( development environment )
 ```
 npm run dev
 ```
