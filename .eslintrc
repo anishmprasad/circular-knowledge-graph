@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "no-tabs": 0,
+    "max-len": ["error",{"code": 200}],
+    "indent":0,
+    "quotes":0,
+    "quote-props":0,
+    "comma-dangle":0,
+    "semi":0,
+    "import/prefer-default-export":0,
+    "eol-last":0
+  }
+}
