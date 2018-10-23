@@ -82,9 +82,13 @@ export default function selectedNode(node){
 * [Webpack](https://webpack.js.org/) - Module Bundler
 * [Zone](https://github.com/angular/zone.js/) - Implements Zones for JavaScript
 
+## Author
+
+- Anish M Prasad (anishmprasad@gmail.com)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Anishmprasad/knowledge-graph/blob/master/README.md) file for details
 
-#### A Visualization from Anish M Prasad
+*In the words of Martin Luther King Junior:*
+> Hate cannot drive out hate; only love can do that.
