@@ -79,7 +79,8 @@ export default function selectedNode(node){
 
 ## Built With
 
-* [Webpack](https://webpack.js.org/) - module bundler
+* [Webpack](https://webpack.js.org/) - Module Bundler
+* [Zone](https://github.com/angular/zone.js/) - Implements Zones for JavaScript
 
 
 ## License
