@@ -1,7 +1,7 @@
 export const config = {
-  "API_BASE_URL": "https://opensourceprojects-pa.googleapis.com/v1/projects/",
-  "API_KEY": "AIzaSyC-j2zg47MN_K041U-KQwiQIIdPUZtvIkg",
-  "PROJECT_ID": "opensource-projectdb-prod",
+  "API_BASE_URL": "",
+  "API_KEY": "",
+  "PROJECT_ID": "",
   "ENABLE_ERROR_REPORTING": true,
   "LIST_PAGE_SIZE": 48,
   "EXPLORE_PAGE_SIZE": 80,
