@@ -1,4 +1,4 @@
-# knowledge-graph
+# circular-knowledge-graph
 
 A visualisation which represents technology
 
@@ -23,7 +23,7 @@ A step by step series of examples that tell you how to get a development env run
 Clone this repository
 
 ```
-git clone https://github.com/Anishmprasad/knowledge-graph.git
+git clone https://github.com/anishmprasad/circular-knowledge-graph.git
 ```
 and select repository
 ```
@@ -74,7 +74,7 @@ export default function selectedNode(node){
 
 ![Preview][screenshot]
 
-[screenshot]: https://github.com/Anishmprasad/knowledge-graph/raw/master/src/public/images/screenshot.png "Preview screenshot"
+[screenshot]: https://github.com/Anishmprasad/circular-knowledge-graph/raw/master/src/public/images/screenshot.png "Preview screenshot"
 
 
 ## Built With
@@ -88,7 +88,7 @@ export default function selectedNode(node){
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Anishmprasad/knowledge-graph/blob/master/README.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Anishmprasad/circular-knowledge-graph/blob/master/README.md) file for details
 
 **In the words of Martin Luther King Junior:**
 > Hate cannot drive out hate; only love can do that.
