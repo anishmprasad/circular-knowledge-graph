@@ -377,18 +377,16 @@ class ProjectNode {
  */
 
 
-function ProjectExploreComponent(config_service) {
+function ProjectExplore(config_service) {
   var _this = this;
   var canvasEl = document.getElementById("canvasEL");
   this.AMBIENCE_RANDOM_ACTION_INTERVAL = 1000;
   this.AMBIENCE_WAIT_AFTER_USER_INPUT = 7000;
   this.LAME_NODE_COUNT = 25;
-
   this.canvas;
   this.done = false;
   this.context = canvasEl.getContext("2d");;
   this.timer = window.requestAnimationFrame;
-
   this.frameCount = 0;
   this.nodes = [];
   this.activeNode;
@@ -832,7 +830,7 @@ function ProjectExploreComponent(config_service) {
  * If on a screen narrower than MOBILE_WIDTH, do not render and navigate to
  * list page.
  */
-ProjectExploreComponent.prototype.ngOnInit = function () {
+ProjectExplore.prototype.ngOnInit = function () {
   if (window.innerWidth < this.config_service.MOBILE_WIDTH) {
     this.navigateToListView();
   } else {
@@ -870,13 +868,13 @@ ProjectExploreComponent.prototype.ngOnInit = function () {
   return this.timer(this.update);
 }
 
-ProjectExploreComponent.prototype.ngOnDestroy = function () {
+ProjectExplore.prototype.ngOnDestroy = function () {
   this.done = true;
 }
 
 
 
 window.onload = (function () {
-  var component = new ProjectExploreComponent(config, utilsService, deeplinkService)
+  var component = new ProjectExplore(config, utilsService, deeplinkService)
   component.ngOnInit()
 })();
