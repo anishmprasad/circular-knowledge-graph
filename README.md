@@ -27,7 +27,7 @@ git clone https://github.com/anishmprasad/circular-knowledge-graph.git
 ```
 and select repository
 ```
-cd knowledge-graph
+cd circular-knowledge-graph
 ```
 And install packages
 
