@@ -830,7 +830,7 @@ function ProjectExplore(config_service) {
  * If on a screen narrower than MOBILE_WIDTH, do not render and navigate to
  * list page.
  */
-ProjectExplore.prototype.ngOnInit = function () {
+ProjectExplore.prototype.onInit = function () {
   if (window.innerWidth < this.config_service.MOBILE_WIDTH) {
     this.navigateToListView();
   } else {
@@ -868,7 +868,7 @@ ProjectExplore.prototype.ngOnInit = function () {
   return this.timer(this.update);
 }
 
-ProjectExplore.prototype.ngOnDestroy = function () {
+ProjectExplore.prototype.onDestroy = function () {
   this.done = true;
 }
 
@@ -876,5 +876,5 @@ ProjectExplore.prototype.ngOnDestroy = function () {
 
 window.onload = (function () {
   var component = new ProjectExplore(config, utilsService, deeplinkService)
-  component.ngOnInit()
+  component.onInit()
 })();
