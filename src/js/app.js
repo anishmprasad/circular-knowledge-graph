@@ -865,12 +865,27 @@ ProjectExplore.prototype.onInit = function () {
   this.doRandomAction();
   this.canvas.dispatchEvent(new Event('mousemove'));
 
+  this.canvas.addEventListener('mousemove',  (event) => {
+    this.moveHandler(event)
+  })
+  this.canvas.addEventListener('click', (event) => {
+    this.clickHandler(event)
+  })
+  this.canvas.addEventListener('mouseover', (event) => {
+    this.pauseInteraction = true;
+  })
+  this.canvas.addEventListener('mouseout', (event) => {
+    this.pauseInteraction = false;
+  })
+
   return this.timer(this.update);
 }
 
 ProjectExplore.prototype.onDestroy = function () {
   this.done = true;
 }
+
+
 
 
 
