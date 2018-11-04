@@ -166,94 +166,22 @@ export default function selectedNode(node){
 
 ```
 
-```jsx
+`circular.html` snippet for circular portion
 
-import React,{ Fragment } from 'react';
-import { connect } from "react-redux";
-import ReactCircularGraph from 'react-circular-graph';
-import './circular.scss'
+```html
 
-var config = {
-    "ENABLE_ERROR_REPORTING": true,
-    "LIST_PAGE_SIZE": 48,
-    "EXPLORE_PAGE_SIZE": 80,
-    "MOBILE_WIDTH": 720,
-    "COLORS": {
-      "GREEN": "#34A853",
-      "RED": "#EA4335",
-      "BLUE": "#4285F4",
-      "YELLOW": "#FBBC05"
-    }
-}
-
-var data = [
-    {
-      "id": "tensorflow",
-      "name": "TensorFlow",
-      "summary": "TensorFlow is a fast, flexible, and scalable open source machine learning library for research and production",
-      "iconUrlSmall": "https://www.gstatic.com/opensource/project-images/tensorflow/logo.png?rs=AGWjSYQ1HC13sEyluXwZoYWC2w2i9qsPjQ&sqp=-oaymwEICEwQTCAAUAEIttCMygU",
-      "iconUrlMedium": "https://www.gstatic.com/opensource/project-images/tensorflow/logo.png?rs=AGWjSYQ7IXg35u8B_D41kSCIRrHjJYcfng&sqp=-oaymwEKCIwBEIwBIABQAQi20IzKBQ",
-      "primaryColor": "#E26026",
-      "startsWith": "t",
-      "fallbackColor": "#34A853",
-      "RGB": {
-        "r": 226,
-        "g": 96,
-        "b": 38
-      }
-    },
-  ]
-
-class CircularData extends Component{
-  constructor(props){
-    super(props)
-  }
-  state = {
-    show:true
-  }
-  render(){
-    if (this.props.canvas){
-      return(
-        <div className={this.props.selectedProjectChanged ? 'selected-project active' : "selected-project unactive"}>
-          <div className="project-summary">
-            <img src={`${this.props.canvas.iconUrlMedium}`} alt="logo" />
-            <h5>{this.props.canvas.name}</h5>
-            <p>{this.props.canvas.summary}</p>
+      <div class='selected-project active'>
+          <div class="project-summary">
+            <img src="https://www.gstatic.com/opensource/project-images/tensorflow/logo.png?rs=AGWjSYQ1HC13sEyluXwZoYWC2w2i9qsPjQ&sqp=-oaymwEICEwQTCAAUAEIttCMygU" alt="logo" />
+            <h5>TensorFlow</h5>
+            <p>TensorFlow is a fast, flexible, and scalable open source machine learning library for research and production</p>
           </div>
-          <a className="text-btn" href={`${this.props.canvas.projecturl}`}>
+          <a class="text-btn" href="/projects/tensorflow">
               View Project
           </a>
-        </div>
-      )
-    }else{
-      return null
-    }
-  }
-}
-function mapStateToProps(state) {
-  return {
-    canvas: state.DEO.Canvas && state.DEO.Canvas.data,
-    selectedProjectChanged: state.DEO.Canvas && state.DEO.Canvas.isProjectChanged
-  }
-}
+      </div>
 
-export default connect(mapStateToProps, null)(Circular);
-
-React.render(
-    <Fragment>
-        <ReactCircularGraph
-            width={720}
-            height={720}
-            data = {data}
-            config = {config}
-            selectedNode = {(node)=>console.log(node)}
-        />
-        <CircularData />
-    </Fragment>, document.body);
-    
 ```
-
-
 
 ### Screenshot
 
